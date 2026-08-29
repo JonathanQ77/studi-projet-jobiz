@@ -1,2 +1,2 @@
 <?php
-echo "PROJET POO MVC JOBIZz";
+echo "PROJET POO MVC JOBIZ";
