@@ -8,8 +8,3 @@ use App\Routing\Router;
 
 $router = new Router();
 $router->handleRequest($_SERVER['REQUEST_URI']);
-/*
- *
-$pageController = new PageController();
-$pageController->home();
-*/

@@ -4,7 +4,7 @@ namespace App\Controller;
 
 class  PageController extends Controller
 {
-    public function home(): void
+    public function home(): void // action
     {
 
         $greetings = "Bonjour";
@@ -14,7 +14,7 @@ class  PageController extends Controller
     }
 
 
-    public function about(): void
+    public function about(): void // action
     {
         $this->render('page/about');
     }
