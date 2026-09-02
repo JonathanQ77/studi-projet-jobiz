@@ -1,1 +1,8 @@
-<h1><?= $errorMessage ?></h1>
+<?php require APP_ROOT . '/templates/header.php'; ?>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-red-600 text-center font-bold"><?= $errorMessage ?></h1>
+
+        </div>
+    </section>
+<?php require APP_ROOT . '/templates/footer.php'; ?>
