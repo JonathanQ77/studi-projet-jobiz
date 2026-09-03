@@ -2,7 +2,7 @@
 
 namespace App\Entity;
 
-class Category
+class Category extends Entity
 {
     protected ?int $id = null; // peux aussi valoir null null initialement car alimenté par getter et setter
     protected ?string $name = null;

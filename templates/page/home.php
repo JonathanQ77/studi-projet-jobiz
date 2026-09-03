@@ -16,7 +16,7 @@
         <div class="flex flex-col text-center w-full mb-20">
             <h2 class="text-xs text-red-400 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Master Cleanse Reliac Heirloom</h1>
-           
+
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
                 asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man
                 bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
@@ -71,6 +71,18 @@
             Button
         </button>
     </div>
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+                <?php foreach ($categories as $category) { ?>
+                    <?php /* @var \App\Entity\Category $category */ ?>
+                    <li>
+                        <a class="text-gray-600 hover:text-gray-800"> <?= $category->getName() ?></a>
+                    </li>
+                <?php } ?>
+            </nav>
+        </div>
 </section>
 
 <?php require APP_ROOT . '/templates/footer.php'; ?>

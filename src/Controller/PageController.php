@@ -15,10 +15,9 @@ class  PageController extends Controller
         /*
          * */
         $categoryRepository = new CategoryRepository();
+        $category = $categoryRepository->findById(1);
         $categories = $categoryRepository->findAll();
         $this->render('page/home', [
-            "greeting" => $greetings,
-            "name" => $name,
             "categories" => $categories]);
     }
 
